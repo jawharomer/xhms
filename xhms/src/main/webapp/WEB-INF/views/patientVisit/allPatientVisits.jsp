@@ -56,6 +56,8 @@
 
 			<c:set var="sumTotalPayment" value="${0}" />
 			<c:forEach items="${patientVisits}" var="item">
+				<c:set var="sumTotalPayment"
+					value="${sumTotalPayment+item.totalPayment}" />
 				<tr>
 					<td>${item.id }</td>
 					<td>${item.patient.id}</td>
@@ -94,8 +96,8 @@
 	</table>
 
 	<div class="p-2 border-top">
-		Sum Total Price=
-		<fmt:formatNumber value="${sumTotalPrice}" maxFractionDigits="3" />
+		Sum Total Payment=
+		<fmt:formatNumber value="${sumTotalPayment}" maxFractionDigits="3" />
 	</div>
 
 </div>

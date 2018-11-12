@@ -42,7 +42,7 @@ public class PatientVisit {
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private Date time;
 
-	@Column(name = "TOTAL_PAYMENT")
+	@Column(name = "TOTAL_PAYMENT", nullable = false)
 	private Double totalPayment;
 
 	@Column(name = "TOTAL_PRICE")

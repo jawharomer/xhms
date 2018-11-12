@@ -19,7 +19,6 @@ public class AdminController {
 	private static final Logger logger = Logger.getLogger(AdminController.class);
 
 	@Autowired
-	
 	private ReportService reportService;
 
 	
